@@ -11,5 +11,5 @@ function calculate() {
     }
     goalScore -= bonus;
     const requiredScore = 100 * (goalScore - totalScore) / 11;
-    document.getElementById("resultLabel").innerHTML = "You need to score " + Math.round(requiredScore * 100) / 100 + "% in the final exam to get " + goalScore + "% in the course. After your bonus and rounding, you'll have " + Math.round(goalScore + bonus) + "%.";
+    document.getElementById("resultLabel").innerHTML = "Your current grade is " + Math.round((100 * totalScore / 89 + bonus) * 100) / 100 + "%. You need to score " + Math.round(requiredScore * 100) / 100 + "% in the final exam to get " + goalScore + "% in the course. After your bonus and rounding, you'll have " + Math.round(goalScore + bonus) + "%.";
 }
